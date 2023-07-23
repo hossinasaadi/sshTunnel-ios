@@ -1,0 +1,8 @@
+framework module "SshLib" {
+	header "ref.h"
+    header "Sshlib.objc.h"
+    header "Universe.objc.h"
+    header "SshLib.h"
+
+    export *
+}

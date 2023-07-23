@@ -8,14 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var vpn: VPN = VPN()
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        Text("SSH Tunnel").font(.headline)
+        List {
+            Toggle(isOn: $vpn.toggle) {
+                    Text("Connect SSH")
+                
+            }
+            .onChange(of: vpn.toggle) { value in
+                vpn.onToggle()
+            }
         }
         .padding()
+        .onAppear(){
+            vpn.viewDidLoad()
+        }
     }
 }
 
