@@ -1,4 +1,4 @@
-# SSH Tunnel (iOS and Mac)
+# SSH Tunnel (iOS and Mac) SwiftUI
 
 sshTunnel is a swiftUI application that support tunnel through ssh with udp gateway (udpgw)
 
