@@ -10,9 +10,7 @@ import SwiftUI
 struct sshTunnelApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView().onAppear(){
-
-            }
+            ContentView()
         }
     }
 }
