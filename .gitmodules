@@ -1,0 +1,3 @@
+[submodule "BadvpnSwift"]
+	path = BadvpnSwift
+	url = https://github.com/hossinasaadi/BadvpnSwift.git
